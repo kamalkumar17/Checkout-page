@@ -15,7 +15,7 @@
 
     <div class="page">
         <section class="order box">
-            <h2 class="box-tittle">Your Order Summary</h2>
+            <h2 class="box-title">Your Order Summary</h2>
             <ul class="items">
                 <li class="item">
                     <div class="item-quantity">
@@ -70,23 +70,29 @@
             <div class="add-item">
                 <button class="add-item-btn">Add more items</button>
             </div>
+        </section>
 
-            <section class="payment">
-                <div class="name-box box">
-                    <h2 class="box-title">Customer Info</h2>
+        <section class="payment">
+            <div class="name-box box">
+                <h2 class="box-title">Customer Info</h2>
+                <div class="input-group">
                     <label for="name" class="user-input-label">Name</label>
                     <input type="text" name="name" id="name" placeholder="Enter Your Name" class="user-input">
                 </div>
+            </div>
 
-                <div class="cc-box box">
-                    <h2 class="box-title">Payment Details</h2>
-                    <div class="input-group box">
-                        <label for="cc-number" class="user-input-label">Credit Card Number</label>
-                        <input type="text" name="cc-number" id="cc-number" placeholder="Enter Your Credit Card Number" class="user-input">
-                    </div>
+            <div class="cc-box box">
+                <h2 class="box-title">Payment Details</h2>
+                <div class="input-group">
+                    <label for="cc-number" class="user-input-label">Credit Card Number</label>
+                    <input type="text" name="cc-number" id="cc-number" placeholder="Enter Your Credit Card Number" class="user-input">
                 </div>
-            </section>
-        </section>
+                <div class="input-group">
+                    <label for="cvv" class="user-input-label">CVV</label>
+                    <input type="text" name="cc-number" id="cc-number" placeholder="Enter Your CVV" class="user-input short-input" id="cvv">
+                </div>
+            </div>
+        </section> 
 
         <section class="total">
             <table class="totals-table">
@@ -99,7 +105,7 @@
                         <td>Tax:</td>
                         <td>$1.5</td>
                     </tr>
-                    <tr>
+                    <tr class="final-totals">
                         <td>Total:</td>
                         <td>$20</td>
                     </tr>
